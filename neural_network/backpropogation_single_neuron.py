@@ -14,7 +14,7 @@ for i in range(10):
     z=w*x + b 
     # forward propogation
     y_hat=sigmoid(z)
-    loss= (y-y_hat)**2
+    loss= ((y-y_hat)**2)
     # back propogate 
     dl_dyhat=-2*(y-y_hat)
     dyhat_dz=sigmoid_derivative(z)
